@@ -17,6 +17,7 @@ const NewRecipeScreen = () => {
     values.ingredients = ingredients
     console.log(values)
     axios.post("https://recipes.devmountain.com/recipes", values)
+    setIngredients([])
   }
   let name = React.useState("")
   let quantity = React.useState("")
